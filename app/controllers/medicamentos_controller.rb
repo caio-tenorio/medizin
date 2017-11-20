@@ -1,4 +1,5 @@
 class MedicamentosController < ApplicationController
+  before_action :authenticate_user!, only: [:create, :show, :edit, :update, :destroy, :new]
   before_action :set_medicamento, only: [:show, :edit, :update, :destroy]
 
   # GET /medicamentos
