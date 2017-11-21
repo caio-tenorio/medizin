@@ -18,6 +18,11 @@
                 <h1>Compre remédios com desconto</h1>
                 <h3>Encontre medicamentos com até 90% de desconto</h3>
                 <a href="#" id="hero-button">Pesquisar</a>
+                <a><%= form_tag medicamentos_path, :method => 'get' do %>
+                    <%= text_field_tag :search, params[:search] %>
+                    <%= submit_tag "Pesquisar" %>
+                <% end %>
+                </a>
             </div>
             
             <nav>

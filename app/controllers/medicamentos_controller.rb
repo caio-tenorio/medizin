@@ -5,7 +5,8 @@ class MedicamentosController < ApplicationController
   # GET /medicamentos
   # GET /medicamentos.json
   def index
-    @medicamentos = Medicamento.all
+    @medicamentos = Medicamento.search(params[:search])
+    #@medicamentos = Medicamento.all
   end
 
   # GET /medicamentos/1
