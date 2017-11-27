@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20171119232210) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "medicamentos", force: :cascade do |t|
     t.string "nome"
     t.float "preco_inicial"
