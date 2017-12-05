@@ -5,7 +5,7 @@
     <div id="discounts-grid">
       <% @medicamentos.each do |medicamento| %>
         <div class="discount-card">
-          <img src="https://www.onofre.com.br/estatico/Produto/Super/121029.jpg"></img>
+          <img> <%= medicamento.imagem %></img>
           <span><%= medicamento.nome %></span>
           <div class="card-preco">de R$ <span class="strike"><%= medicamento.preco_inicial %></span><br>
             por R$ <%= medicamento.preco_final %>

@@ -5,6 +5,7 @@ class CreateMedicamentos < ActiveRecord::Migration[5.1]
       t.float :preco_inicial
       t.float :preco_final
       t.string :validade
+      t.string :imagem
 
       t.timestamps
     end

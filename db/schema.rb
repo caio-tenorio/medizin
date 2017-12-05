@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20171119232210) do
     t.float "preco_inicial"
     t.float "preco_final"
     t.string "validade"
+    t.string "imagem"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -6,4 +6,6 @@ class Medicamento < ApplicationRecord
 			all
 		end
 	end
+
+	mount_uploader :imagem, ImagemUploader
 end
