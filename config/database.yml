@@ -31,7 +31,7 @@ production:
   pool: 5
   username: postgres
   password: projetao123
-  host: localhost
+  host: 138.197.97.26
 
 development:
   adapter: postgresql

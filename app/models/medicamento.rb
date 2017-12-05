@@ -8,4 +8,5 @@ class Medicamento < ApplicationRecord
 	end
 
 	mount_uploader :imagem, ImagemUploader
+	has_many :cupoms
 end
