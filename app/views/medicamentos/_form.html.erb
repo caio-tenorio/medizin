@@ -1,4 +1,4 @@
-<%= form_with(model: medicamento, local: true) do |form| %>
+<%= form_with(model: medicamento, multipart: true) do |form| %>
   <% if medicamento.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(medicamento.errors.count, "error") %> prohibited this medicamento from being saved:</h2>
@@ -10,6 +10,12 @@
       </ul>
     </div>
   <% end %>
+
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
 
   <div class="field">
     <%= form.label :nome %>
